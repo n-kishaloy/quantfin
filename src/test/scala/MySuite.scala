@@ -8,20 +8,20 @@ import java.time.LocalDate
 class Basic extends munit.FunSuite:
   test("Yearfrac"):
     assertEquals(
-      yearFromFloat(yearToFloat(LocalDate.of(2024, 1, 1))),
+      dateFromFloat(dateToFloat(LocalDate.of(2024, 1, 1))),
       LocalDate.of(2024, 1, 1)
     )
     assertEquals(
-      yearFromFloat(yearToFloat(LocalDate.of(2024, 12, 31))),
+      dateFromFloat(dateToFloat(LocalDate.of(2024, 12, 31))),
       LocalDate.of(2024, 12, 31)
     )
     assertEquals(
-      yearFromFloat(yearToFloat(LocalDate.of(2023, 8, 15))),
+      dateFromFloat(dateToFloat(LocalDate.of(2023, 8, 15))),
       LocalDate.of(2023, 8, 15)
     )
-    println(yearFromFloat(yearToFloat(LocalDate.of(2024, 1, 1)) - 0.4 / 365.0))
+    // println(dateFromFloat(dateToFloat(LocalDate.of(2024, 1, 1)) - 0.4 / 365.0))
     assertEquals(
-      yearFromFloat(yearToFloat(LocalDate.of(2024, 2, 29))),
+      dateFromFloat(dateToFloat(LocalDate.of(2024, 2, 29))),
       LocalDate.of(2024, 2, 29)
     )
   // test("PV and FV"):
