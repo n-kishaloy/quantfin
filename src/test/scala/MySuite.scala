@@ -144,6 +144,6 @@ class Basic extends munit.FunSuite:
       Some(0.2784553815926181)
     )
 
-class MyDrt extends munit.FunSuite:
+class Statements extends munit.FunSuite:
   test("statements"):
     assert(true)
